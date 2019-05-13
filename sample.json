@@ -1,0 +1,49 @@
+{
+    "fluxCondensator": {
+        "kpiSets": [
+            {
+                "transform": [], 
+                "cellsX": 4,
+                "cellsY": 1,
+                "values": [
+                    {
+                        "name": "Speed",
+                        "value": 100,
+                        "color": "#ff0000",
+                        "cellX": 0,
+                        "cellY": 0
+                    },
+                    {
+                        "name": "Status",
+                        "value": "ok",
+                        "color": "#00ff00",
+                        "cellX": 3,
+                        "cellY": 0
+                    }
+
+                ]
+            },
+            {
+                "transform": [],
+                "cellsX": 2,
+                "cellsY": 2,
+                "values": [
+                    {
+                        "name": "Load",
+                        "value": 100,
+                        "color": "#00ff00",
+                        "cellX": 0,
+                        "cellY": 0,
+                    },
+                    {
+                        "name": "Fuel",
+                        "value": 73,
+                        "color": "#ffff00",
+                        "cellX": 1,
+                        "cellY": 1,
+                    }	
+                ]
+            }
+        ]
+    }
+}

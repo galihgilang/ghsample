@@ -1,0 +1,22 @@
+version: '2'
+ 
+services:
+ web:
+   restart: always
+   build: ./kpiServer
+   env_file: /usr/local/etc/.env
+   expose:
+     - "8000"
+   volumes:
+     - /usr/src/app/kpiServer
+   command: /usr/local/bin/gunicorn -w 1 -b :8000 kpiServer:app
+
+ nginx:
+   restart: always
+   build: ./nginx
+   ports:
+     - "80:80"
+   volumes_from:
+     - web
+   depends_on:
+     - web
